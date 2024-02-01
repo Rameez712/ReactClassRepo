@@ -1,0 +1,4 @@
+# oryx.yml
+
+platform: nodejs
+platform_version: 20.11.0
