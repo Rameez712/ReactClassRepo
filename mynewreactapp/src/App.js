@@ -1,12 +1,19 @@
+import React from "react";
+import App2 from "./App2";
+
+
 function App(){
-  const name="Rameez"
+
 
   return(
     <div>
-      <h1>Hello World LGS V</h1>
+     <h1>Component 1</h1> 
+       <App2/> 
+
     </div>
   )
 }
-    
+
+
 
 export default App;

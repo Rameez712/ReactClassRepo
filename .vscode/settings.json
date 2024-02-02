@@ -1,4 +1,8 @@
 {
     "appService.defaultWebAppToDeploy": "",
-    "appService.deploySubpath": "mynewreactapp\\build"
+    "appService.deploySubpath": "mynewreactapp\\build",
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ]
 }

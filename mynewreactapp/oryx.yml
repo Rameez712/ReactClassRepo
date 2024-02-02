@@ -1,4 +1,5 @@
 # oryx.yml
 
 platform: nodejs
-platform_version: 20.11.0
+platform_version: 20
+oryx_version: 0.2.20230829.2  # Updated Oryx version
