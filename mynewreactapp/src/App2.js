@@ -1,9 +1,11 @@
-function App2(){
+import React  from "react";
+
+function App2({props}){
 
 
     return(
       <div>
-       <h1>Component 2</h1> 
+       <browserrouter></browserrouter>
   
       </div>
     )

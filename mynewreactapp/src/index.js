@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 
 import App from './App'
 import JSX from './JSX'
+import PropsParent from './propsParent';
+import UseEffectComp from './UseEffect'
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

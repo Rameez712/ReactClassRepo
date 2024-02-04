@@ -3,20 +3,17 @@ import App2 from "./App2";
 
 function UseState(){
 
-  //let name = "Rameez"
   const[state,setState]=useState("Rameez state");
 
-  const buttonClik = ()=>{
-   
+
+  const buttonClick = ()=>{
     setState("Ahmed State");
   }
 
   return(
     <>
      <h1>Hi {state}</h1> 
-      <button onClick={buttonClik}>buttonClik</button>
-
-
+      <button onClick={buttonClick}>buttonClick</button>
     </>
   )
 }
