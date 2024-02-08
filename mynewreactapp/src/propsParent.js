@@ -8,7 +8,7 @@ function PropsParent(){
     return(
             <>
             Hello
-            <App2 props={object}/>
+          
             </>
 
     )

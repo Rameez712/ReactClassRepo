@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+
+import UseRefComp from './UseRefComp';
 import App from './App'
-import JSX from './JSX'
-import PropsParent from './propsParent';
-import UseEffectComp from './UseEffect'
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <App />
+    <UseRefComp />
 
 );
 
