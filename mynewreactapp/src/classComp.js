@@ -1,43 +1,45 @@
-import React  from "react";
+import React from "react";
 
 class ClassComp extends React.Component{
+
     constructor(props){
-        super(props)
-        this.state={
+        super(props);
+        this.state = {
             color:"red"
         }
     }
 
-static getDerivedStateFromProps(props,state){
+    handleClick = ()=>{
+            this.setState({color:"violet"});      
+    }
 
-    console.log("getDerivedStateFromProps");
-    console.log("prevProps:", props);
-    console.log("prevState:", state);
-     return({color:state.color})
-}
-
-  componentDidUpdate(prevProps, prevState) {
-    console.log("componentDidUpdate");
-    console.log("prevProps:", prevProps);
-    console.log("prevState:", prevState);
-    
-  }
-
-handleclick =()=>{
-    this.setState({color:"green"})
-}
     render(){
         return(
-            <>
-            {this.state.color}
-            <button onClick={this.handleclick}>Change Color</button>
-            </>
-        )
-    }
+        <>
+       <ClassComp2 comp1props={this.state.color}/>
+       <button onClick={this.handleClick}>button</button>
+        </>
+    )
+}
 }
 
+class ClassComp2 extends React.Component{
 
-
-
+    constructor(props){
+        super(props);
+        this.state = {
+            color:"blue"
+        }
+    }
+    render(){
+        return(
+        <>
+       <h1>Comp 2 state :  {this.state.color}</h1>
+       <br/>
+       <h1>Comp 1 props :  {this.props.comp1props}</h1>
+        </>
+    )
+}
+}
 
 export default ClassComp;

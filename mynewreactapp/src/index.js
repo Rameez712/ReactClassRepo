@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 
 
 import UseRefComp from './UseRefComp';
-import App from './App'
+import UnMount from './classComp'
 
 
 
@@ -11,7 +11,7 @@ import App from './App'
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
-    <UseRefComp />
+    <UnMount />
 
 );
 
